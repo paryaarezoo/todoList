@@ -1,0 +1,175 @@
+
+
+:root{
+    --font-default:Pelak;
+}
+
+.light-mode{
+    --color-heading:#2D3250;
+    --color-default:#1e1e1e;
+    --color-background:#f3f4f6;
+    --color-accent:#424769;
+    --color-primary:#7077A1;
+    --color-secondary:#F6B17A;
+}
+
+.dark-mode{
+    --color-heading:#f3f4f6;
+    --color-default:#f3f4f6;
+    --color-background:#2D3250;
+    --color-accent:#7077A1;
+    --color-primary:#424769;
+    --color-secondary:#F6B17A;
+
+}
+
+body{
+    background-color: var(--color-background);
+    font-family: var(--font-default);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    direction: rtl;
+    transition: background-color 0.3s ease;
+    color: var(--color-default);
+
+}
+ul{
+    list-style: none;
+}
+
+header h1{
+    color: var(--color-heading);
+
+}
+
+#theme-switcher{
+    
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 2.5rem;
+    background-color: transparent;
+    border: none;
+    color: var(--color-secondary);
+
+}
+#theme-switcher:hover{
+    color: var(--color-primary);
+    transform: scale(1.2);
+}
+#theme-switcher:active{
+    transform: scale(0.9);
+}
+
+main{
+    background-color: var(--color-accent);
+    margin: 0 auto;
+    width: 85%;
+    padding: 3rem;
+    border-radius:1.75rem ;
+}
+.add-task{
+    /* display: flex; */
+    gap: 1.5rem;
+    /* justify-content: center;
+    align-items: center; */
+    margin-bottom: 5rem;
+}
+
+.add-task .head-btn{
+    font-size: 1.25rem;
+    border: transparent;
+    background-color: var(--color-secondary);
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+}
+
+.add-task input{
+    border: 1px solid var(--color-primary);
+    border-radius: 1.5rem;
+    padding: 0.75rem;
+
+}
+.add-task input:focus{
+    outline: none;
+    border: 1px solid var(--color-secondary);
+    box-shadow: 0 0 5px var(--color-secondary);
+}
+.add-task .head-btn:hover{
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    transform: scale(1.1);
+}
+.add-task .head-btn:active{
+    transform: scale(0.9);
+}
+
+
+.card-body{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+}
+
+
+.card-body .work{
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+
+}
+.card-body .clear{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.cb-input{
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+
+.cb-input:hover{
+    color: var(--color-secondary);
+    transform: scale(1.2);
+}
+.cb-input:active{
+    transform: scale(0.9);
+}
+
+
+
+.clear i{
+    color:#8E1616;
+
+}
+.clear i:hover{
+    color: red;
+    transform: scale(1.2);
+}
+.clear i:active{
+    transform: scale(0.9);
+}
+.clear{
+    display: flex;
+    text-align: end;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    
+}
+
+
+
+
+  
